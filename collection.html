@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+
+    <!--Link CSS File-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- Offer Bar -->
+    <div class="offer-bar" id="offer-bar">
+        <p id="offer-bar__desc">Sign Up and
+            <b>GET 20% OFF</b>
+            for your first Order
+        </p>
+        <i onclick="xmark()" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-menu">
+            <i id="navbar-menu-activate" class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+        </div>
+        <div class="navbar-links">
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="#new-arrival">New Arrival</a></p>
+            <p><a href="#most-wanted">Most Wanted</a></p>
+            <p><a href="./collection.html">Collections</a></p>
+            <p><a href="./contact.html">Contact Us</a></p>
+
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+
+        <div class="side-navbar-links">
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="#new-arrival">New Arrival</a></p>
+            <p><a href="#most-wanted">Most Wanted</a></p>
+            <p><a href="./collection.html">Collections</a></p>
+            <p><a href="./contact.html">Contact Us</a></p>
+        </div>
+        <p><i id="side-navbar-close" class="fa-solid fa-xmark"></i></p>
+    </nav>
+
+    <!-- Collection Section -->
+    <div class="contain">
+        <div class="filterSec">
+            <div class="filerSec-occasion">
+                <h3>Occasion</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="summer"> Summer <br>
+                    <input type="checkbox" name="tags" value="party"> Party <br>
+                    <input type="checkbox" name="tags" value="beach"> Beach
+                </div>
+            </div>
+            <div class="filterSec-colors">
+                <h3>Colors</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="red"> Red <br>
+                    <input type="checkbox" name="tags" value="blue"> Blue <br>
+                    <input type="checkbox" name="tags" value="white"> White <br>
+                    <input type="checkbox" name="tags" value="green"> Green
+                </div>
+            </div>
+            <div class="filterSec-arrivals">
+                <h3>Arrivals</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="new"> New <br>
+                    <input type="checkbox" name="tags" value="old"> Old
+                </div>
+            </div>
+            <hr class="vertical-line">
+        </div>
+
+        <div class="productSec">
+            <form class="navSearch">
+                <input type="search" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+
+            <div class="products"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<!-- Script -->
+<script src="./collection.js" defer></script>
